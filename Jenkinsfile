@@ -1,3 +1,7 @@
+def sayhello(String name)
+{
+print("HEllo"+name)
+}
 pipeline{
     
     agent{
