@@ -1,4 +1,4 @@
-def sayhello(String name)
+def sayHello(String name)
 {
 print("HEllo "+name)
 }
@@ -20,7 +20,7 @@ pipeline{
         steps{
         
         sh 'mvn clean install'
-        sayhello "A"
+        sayHello "A"
         
         }
     
