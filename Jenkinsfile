@@ -1,6 +1,6 @@
 def sayhello(String name)
 {
-print("HEllo"+name)
+print("HEllo "+name)
 }
 pipeline{
     
