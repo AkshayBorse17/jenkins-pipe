@@ -6,7 +6,7 @@ pipeline{
     stages{
     stage("code"){
         steps{
-        git branch: 'main', url: 'https://github.com/akshayborse007/maven-nexus-deployment.git'
+        git branch: 'main', url: 'https://github.com/akshayborse007/jenkins-pipe.git'
         
         }
         
@@ -14,7 +14,7 @@ pipeline{
     
     stage("build"){
         steps{
-        sayhello "AB is here lets go sdsdd"
+        
         sh 'mvn clean install'
         
         }
