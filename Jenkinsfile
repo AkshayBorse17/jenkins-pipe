@@ -1,7 +1,11 @@
-def sayHello(String name)
-{
-print("HEllo "+name)
-}
+// def sayHello(String name)
+// {
+// print("HEllo "+name)
+// }
+
+@Library('pipeline-library-demo')_
+
+
 pipeline{
     
     agent{
@@ -20,7 +24,7 @@ pipeline{
         steps{
         
         sh 'mvn clean install'
-        sayHello "A"
+        sayHello "BC"
         
         }
     
