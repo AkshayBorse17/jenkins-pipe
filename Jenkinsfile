@@ -14,7 +14,7 @@ pipeline{
     
     stage("build"){
         steps{
-        sayhello "AB is here lets go"
+        sayhello "AB is here lets go sdsdd"
         sh 'mvn clean install'
         
         }
