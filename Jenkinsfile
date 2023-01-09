@@ -16,6 +16,7 @@ pipeline{
         steps{
         
         sh 'mvn clean install'
+        sayhello "AB"
         
         }
     
