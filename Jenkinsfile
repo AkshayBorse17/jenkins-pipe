@@ -26,10 +26,10 @@ pipeline{
         sh 'mvn clean install'
              withCredentials([string(credentialsId: 'SONAR_TOKEN', variable: 'SONAR_TOKEN')]) {
             mvn verify org.sonarsource.scanner.maven:sonar-maven-plugin:sonar -Dsonar.projectKey=abishere1    
-            sayHello "BC"
+            
                 }
         
-        
+        sayHello "BC"
         }
     
     }
